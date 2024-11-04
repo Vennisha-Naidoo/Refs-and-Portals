@@ -2,6 +2,10 @@ import { useRef, useState } from "react";
 
 export default function Player() {
 
+  /*
+    useRef does not execute the component again while useState does
+  */
+
   const playerName = useRef(); //JavaScript Object
 
   const [enteredPlayerName, setEnteredPlayerName] = useState('');
